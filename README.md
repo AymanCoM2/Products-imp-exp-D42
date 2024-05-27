@@ -5,7 +5,7 @@
 - [x] **Task1 : Show All Properties in Table**
 - [ ] **Task1 : Sorting**
 - [x] **Task1 : Adding Links For other Tasks**
-- [ ] **Task1 : The UI Design For the Pages and Pagination**
+- [ ] **Task1 : The Design For Pagination**
 
 - [ ] **Task2 : Edit Schema To Fit new xml File (3.xml)**
 - [ ] **Task2 : Handling The Heavy Import With Other method?**
@@ -15,6 +15,6 @@
 - [ ] **Unit Tests , Covering Code By test**
 
 - [ ] **Adding Steps Files to install the Project and All Steps**
-- [ ] **Hosting It For Public View and Testing**
+- [ ] **Hosting It /  Or Screen Recording**
 
 # Steps For installing :
