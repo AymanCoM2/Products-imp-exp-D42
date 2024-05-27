@@ -15,7 +15,7 @@ use App\Entity\Product;
 
 class ImportController extends AbstractController
 {
-    #[Route('/get/form', name: 'import_form')]
+    #[Route('/import-form', name: 'import_form')]
     public function importForm(Request $request, EntityManagerInterface $entityManager): Response
     {
         $form = $this->createForm(FileUploadType::class);

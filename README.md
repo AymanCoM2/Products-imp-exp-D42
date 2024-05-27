@@ -2,11 +2,9 @@
 
 ## Things to Do:
 
-
-
-- [ ] **Task1 : Show All Properties in Table**
+- [x] **Task1 : Show All Properties in Table**
 - [ ] **Task1 : Sorting**
-- [ ] **Task1 : Adding Links For other Tasks**
+- [x] **Task1 : Adding Links For other Tasks**
 - [ ] **Task1 : The UI Design For the Pages and Pagination**
 
 - [ ] **Task2 : Edit Schema To Fit new xml File (3.xml)**
@@ -18,10 +16,5 @@
 
 - [ ] **Adding Steps Files to install the Project and All Steps**
 - [ ] **Hosting It For Public View and Testing**
-
-- [ ] **Test**
-- [ ] **Test**
-- [ ] **Test**
-- [ ] **Test**
 
 # Steps For installing :
