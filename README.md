@@ -2,15 +2,13 @@
 
 ## Things to Do:
 
-- [x] **Task1 : Show All Properties in Table**
 - [ ] **Task1 : Sorting**
-- [x] **Task1 : Adding Links For other Tasks**
 - [ ] **Task1 : The Design For Pagination**
 
 - [ ] **Task2 : Edit Schema To Fit new xml File (3.xml)**
 - [ ] **Task2 : Handling The Heavy Import With Other method?**
 
-- [ ] **Task3: Exporting Data into CSV from the sqlite**
+- [ ] **Task3: POLISH Exporting CSV[Add all Other Fields]**
 
 - [ ] **Unit Tests , Covering Code By test**
 
