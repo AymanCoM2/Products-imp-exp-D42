@@ -1,6 +1,7 @@
 # To-Do List
 
 ## Things to Do:
+
 - [ ] **The Design or the UI**
 - [ ] **Unit Tests**
 - [ ] **Sorting Items**
