@@ -7,6 +7,7 @@
 
 - [ ] **Task2 : Edit Schema To Fit new xml File (3.xml)**
 - [ ] **Task2 : Handling The Heavy Import With Other method?**
+    - This is a BackGround Process With Scheduling ; 
 
 - [ ] **Task3: POLISH Exporting CSV[Add all Other Fields]**
 

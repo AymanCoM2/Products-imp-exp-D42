@@ -25,6 +25,15 @@ class Product
     #[ORM\Column(length: 255, nullable: true)]
     private ?string $category = null;
 
+    #[ORM\Column(length: 500, nullable: true)]
+    private ?string $description_common = null;
+
+    #[ORM\Column(length: 500, nullable: true)]
+    private ?string $description_for_ozon = null;
+
+    #[ORM\Column(length: 500, nullable: true)]
+    private ?string $description_for_wildberries = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -74,6 +83,42 @@ class Product
     public function setCategory(?string $category): static
     {
         $this->category = $category;
+
+        return $this;
+    }
+
+    public function getDescriptionCommon(): ?string
+    {
+        return $this->description_common;
+    }
+
+    public function setDescriptionCommon(?string $description_common): static
+    {
+        $this->description_common = $description_common;
+
+        return $this;
+    }
+
+    public function getDescriptionForOzon(): ?string
+    {
+        return $this->description_for_ozon;
+    }
+
+    public function setDescriptionForOzon(?string $description_for_ozon): static
+    {
+        $this->description_for_ozon = $description_for_ozon;
+
+        return $this;
+    }
+
+    public function getDescriptionForWildberries(): ?string
+    {
+        return $this->description_for_wildberries;
+    }
+
+    public function setDescriptionForWildberries(?string $description_for_wildberries): static
+    {
+        $this->description_for_wildberries = $description_for_wildberries;
 
         return $this;
     }
