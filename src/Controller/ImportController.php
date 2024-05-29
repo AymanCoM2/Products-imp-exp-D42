@@ -37,7 +37,6 @@ class ImportController extends AbstractController
                 $product->setCategory($arrayRecords['category'] ? $arrayRecords['category'] : "");
                 $entityManager->persist($product);
             }
-            // TODO : Importing the Other Type oF XML with Newer keys  ;
         }
         $entityManager->flush();
         return $this->render('import_form.html.twig', [
