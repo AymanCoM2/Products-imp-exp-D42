@@ -28,10 +28,13 @@ class ImportController extends AbstractController
             foreach ($xmlFile as $singleRecord) {
                 $arrayRecords = (array)$singleRecord;
                 $product = new Product();
-                $product->setName($arrayRecords['name']);
-                $product->setDescription($arrayRecords['description']);
-                $product->setWeight($arrayRecords['weight']);
-                $product->setCategory($arrayRecords['category']);
+                $product->setName($arrayRecords['name'] ? $arrayRecords['name'] : "");
+                $product->setDescription($arrayRecords['description'] ? $arrayRecords['description'] : "");
+                $product->setDescriptionCommon($arrayRecords['description_common'] ? $arrayRecords['description_common'] : "");
+                $product->setDescriptionForOzon($arrayRecords['description_for_ozon'] ? $arrayRecords['description_for_ozon'] : "");
+                $product->setDescriptionForWildberries($arrayRecords['description_for_wildberries'] ? $arrayRecords['description_for_wildberries'] : "");
+                $product->setWeight($arrayRecords['weight'] ? $arrayRecords['weight'] : "");
+                $product->setCategory($arrayRecords['category'] ? $arrayRecords['category'] : "");
                 $entityManager->persist($product);
             }
             // TODO : Importing the Other Type oF XML with Newer keys  ;
