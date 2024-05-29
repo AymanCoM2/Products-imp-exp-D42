@@ -16,11 +16,24 @@ class ProductController extends AbstractController
     public function showProducts(Request $request, EntityManagerInterface $entityManager, PaginatorInterface $paginator): Response
     {
         $searchTerm = $request->query->get('search', '');
+        $sortBy = $request->query->get('sort_by', '');
         $queryBuilder = $entityManager->getRepository(Product::class)->createQueryBuilder('p');
 
         if ($searchTerm) {
             $queryBuilder->where('p.name LIKE :searchTerm OR p.description LIKE :searchTerm')
                 ->setParameter('searchTerm', '%' . $searchTerm . '%');
+        }
+
+        switch ($sortBy) {
+            case 'category':
+                $queryBuilder->orderBy('p.category', 'ASC');
+                break;
+            case 'title':
+                $queryBuilder->orderBy('p.name', 'ASC');
+                break;
+            default:
+                $queryBuilder->orderBy('p.id', 'ASC'); // Default sorting by ID or any other default field
+                break;
         }
 
         $query = $queryBuilder->getQuery();
