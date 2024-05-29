@@ -25,7 +25,12 @@ class ExportController extends AbstractController
         foreach ($products as $product) {
             $csvData[] = [
                 $product->getName(),
-                $product->getWeight()
+                $product->getWeight(),
+                $product->getDescription(),
+                $product->getDescriptionCommon(),
+                $product->getDescriptionForOzon(),
+                $product->getDescriptionForWildberries(),
+                $product->getCategory(),
             ];
         }
 
